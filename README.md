@@ -30,9 +30,11 @@ exportGIT_HOME=/Users/(UID)/git
 
 ####Start RestService
   $ docker exec -it serverapp-test-up service v-tornado start
+  $ docker exec -it serverapp-test-up service w-tornado start
 
 ####Stop RestService
   $ docker exec -it serverapp-test-up service v-tornado stop
+  $ docker exec -it serverapp-test-up service w-tornado stop
 
 ####Start WebServer
   $ docker exec -it serverapp-test-up service v-nginx start
@@ -45,3 +47,4 @@ exportGIT_HOME=/Users/(UID)/git
   192.168.59.103
 
 ex. http://192.168.59.103:8080/
+    http://192.168.59.103:8080/
