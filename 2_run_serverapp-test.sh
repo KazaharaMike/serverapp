@@ -1,4 +1,4 @@
-docker run --name serverapp-test-up -i -t -d -p 8080:8080 \
+docker run --name serverapp-test-up -i -t -d -p 8080:8080 -p 8888:8888 \
   -v $GIT_HOME/serverapp:/opt/t4j/serverapp \
   -v $GIT_HOME/chainerapp:/opt/t4j/chainerapp \
   -v $GIT_HOME/chainer-data:/var/opt/t4j/chainer \
